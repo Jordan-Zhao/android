@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zjd.demo2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/demo2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zjd.demo2.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zjd.demo2.OpenActivity"
+            android:label="@string/title_activity_open" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 布局 -->
+        <activity
+            android:name="com.zjd.demo2.LayoutActivity"
+            android:label="@string/title_activity_linear_layout" >
+        </activity>
+        <activity
+            android:name="com.zjd.demo2.FragementActivity"
+            android:label="@string/title_activity_fragement" >
+        </activity>
+        
+        <!-- 访问联系人，Intent Filter -->
+        <activity
+            android:name="com.zjd.demo2.SendMsgActivity"
+            android:label="@string/title_activity_send_msg" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zjd.demo2.ContactPickActivity"
+            android:label="@string/title_activity_contact_pick" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"></action>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_publish">PublishActivity</string>
+    
+    <string name="newsList">新闻列表</string>
+    <string name="vedioList">视频列表</string>
+    <string name="photoList">图片列表</string>
+
+</resources>

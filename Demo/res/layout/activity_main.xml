@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/inputName"
+        style="@style/classInput"
+        android:inputType="textPersonName"
+        android:text="用户名">
+    </EditText>
+    
+    <EditText
+        android:id="@+id/inputPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:text="密码">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/classButton"
+        android:text="取消" 
+        android:onClick="onCancelHandler"
+        />
+   	<Button
+        android:id="@+id/btnOk"
+        style="@style/classButton"
+        android:text="确定" 
+        android:onClick="onOkHandler"
+        />
+   	
+   	<Button
+        android:id="@+id/btnShow"
+        style="@style/classButton"
+        android:text="显示功能" 
+        android:onClick="onShowHandler"
+        />
+   	
+   	<Button
+        android:id="@+id/btnOpenDemo2"
+        style="@style/classButton"
+        android:text="打开demo2" 
+        android:onClick="onOpenDemo2Handler"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        />
+    
+    <TextView 
+        android:id="@+id/googleLink"
+        style="@style/classText"
+		android:autoLink="all"
+		android:text="这是google网站：http://google.com"
+        />
+    
+    <TextView 
+        android:id="@+id/txtMetrics"
+        style="@style/classText"
+        />
+    
+    <ImageButton android:id="@+id/imgBtn1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/advancedbutton"
+        />
+    
+    <Button
+        android:id="@+id/btnOpenDemo3"
+        style="@style/classButton"
+        android:text="进入demo页面" 
+        android:onClick="onOpenDemo3Handler"
+        />
+
+</LinearLayout>
