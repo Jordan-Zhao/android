@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 点击时 -->
+    <item android:drawable="@color/green" android:state_pressed="true"></item>
+
+    <!-- 默认下 -->
+    <item android:drawable="@color/plates_head_bg"></item>
+
+</selector>
