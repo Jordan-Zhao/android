@@ -22,6 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+         <!-- 接收外部应用请求 -->
+        <activity
+            android:name="com.zjd.demo1.PublicShowActivity"
+            android:label="@string/title_activity_public_show" >
+            <intent-filter >
+                <action android:name="com.zjd.demo.publicShow" ></action>
+                <category android:name="android.intent.category.DEFAULT"/><!--category不能为空，否则demo2里会抛异常，找不到Filter-->
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
