@@ -1,14 +1,15 @@
 package com.zjd.demo2;
 
-import android.net.Uri;
-import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
+
 
 public class SendMsgActivity extends Activity {
 	private final int REQUEST_CODE_SELECT_CONTACT = 1;

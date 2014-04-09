@@ -7,39 +7,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context="com.zjd.demo2.service.CommonServiceActivity" >
 
-    <TextView
+    <!-- 日志服务 -->
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="开启Log Srevice" 
+        android:onClick="openLogHandloer"/>
     
-    <Button 
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="显示布局页面"
-        android:onClick="showLayoutHandler"/>
+        android:text="关闭Log Srevice" 
+        android:onClick="clouseLogHandloer"/>
     
-    <Button 
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="显示Fragement布局"
-        android:onClick="showFragementHandler"/>
-    <Button 
+        android:text="绑定Log Srevice" 
+        android:onClick="bindLogHandloer"/>
+    
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="读取联系人信息"
-        android:onClick="sendMsgHandler"/>
+        android:text="解绑Log Srevice" 
+        android:onClick="unbindLogHandloer"/>
+    
+    <!-- 音乐服务 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定音乐" 
+        android:onClick="openMusicHandloer"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消音乐" 
+        android:onClick="closeMusicHandloer"/>
 
-    <Button 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="打开demo的PublicShowActivity"
-        android:onClick="openDemoPublicHandler"/>
-    
-    <Button 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="打开Service页面"
-        android:onClick="openServiceHandler"/>
 </LinearLayout>

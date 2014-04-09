@@ -9,5 +9,7 @@
     <string name="title_activity_fragement">FragementActivity</string>
     <string name="title_activity_send_msg">SendMsgActivity</string>
     <string name="title_activity_contact_pick">ContactPickActivity</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="title_activity_common_service">CommonServiceActivity</string>
 
 </resources>

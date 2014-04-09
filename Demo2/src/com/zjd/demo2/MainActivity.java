@@ -1,5 +1,7 @@
 package com.zjd.demo2;
 
+import com.zjd.demo2.service.CommonServiceActivity;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Fragment;
@@ -38,6 +40,10 @@ public class MainActivity extends Activity {
 	
 	public void openDemoPublicHandler(View view){
 		startActivity(new Intent("com.zjd.demo.publicShow",null));
+	}
+	
+	public void openServiceHandler(View view){
+		startActivity(new Intent(this,CommonServiceActivity.class));
 	}
 
 }

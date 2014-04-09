@@ -27,10 +27,11 @@
             android:label="@string/title_activity_open" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <!-- 布局 -->
         <activity
             android:name="com.zjd.demo2.LayoutActivity"
@@ -40,13 +41,14 @@
             android:name="com.zjd.demo2.FragementActivity"
             android:label="@string/title_activity_fragement" >
         </activity>
-        
+
         <!-- 访问联系人，Intent Filter -->
         <activity
             android:name="com.zjd.demo2.SendMsgActivity"
             android:label="@string/title_activity_send_msg" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -54,13 +56,38 @@
             android:name="com.zjd.demo2.ContactPickActivity"
             android:label="@string/title_activity_contact_pick" >
             <intent-filter>
-                <action android:name="android.intent.action.PICK"></action>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.PICK" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.zjd.demo2.service.ServiceActivity"
+            android:label="@string/title_activity_service" >
+        </activity>
+        <activity
+            android:name="com.zjd.demo2.service.CommonServiceActivity"
+            android:label="@string/title_activity_common_service" >
+        </activity>
         
+        <service 
+            android:name="com.zjd.demo2.service.CommonService">
+            <intent-filter>
+                <action android:name="com.zjd.demo2.service.CommonService"></action>
+            </intent-filter>
+        </service>
+        <service 
+            android:name="com.zjd.demo2.service.MusicService">
+            <intent-filter>
+                <action android:name="com.zjd.demo2.service.MusicService"></action>
+            </intent-filter>
+        </service>
     </application>
 
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
     
+    <!-- SD卡读权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 </manifest>
