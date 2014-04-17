@@ -19,7 +19,7 @@ public class TabBarActivity extends Activity {
 		ActionBar bar = getActionBar();
 		bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
-		bar.setDisplayOptions(0,ActionBar.DISPLAY_SHOW_HOME|ActionBar.DISPLAY_SHOW_TITLE );
+		bar.setDisplayOptions(0,ActionBar.DISPLAY_SHOW_HOME|ActionBar.DISPLAY_SHOW_TITLE );	//Òþ²Ø±êÌâÀ¸
 		
 		Tab taba = bar.newTab().setText("a tab");
 		FragementA fa = new FragementA();
