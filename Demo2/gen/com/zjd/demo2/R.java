@@ -25,34 +25,35 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f08001c;
-        public static final int button1=0x7f08000d;
-        public static final int button2=0x7f08000f;
-        public static final int button3=0x7f080010;
-        public static final int button4=0x7f080011;
-        public static final int button5=0x7f080012;
-        public static final int contactItemTxt=0x7f080007;
+        public static final int action_settings=0x7f08001d;
+        public static final int button1=0x7f08000e;
+        public static final int button2=0x7f080010;
+        public static final int button3=0x7f080011;
+        public static final int button4=0x7f080012;
+        public static final int button5=0x7f080013;
+        public static final int contactItemTxt=0x7f080008;
         public static final int contactPickList=0x7f080001;
         public static final int countText=0x7f080000;
-        public static final int devide=0x7f08001b;
+        public static final int devide=0x7f08001c;
+        public static final int fragActivity=0x7f080007;
         public static final int fragment1=0x7f080002;
         public static final int fragment2=0x7f080003;
-        public static final int frg1_btn=0x7f080008;
-        public static final int frg2_txt=0x7f080009;
-        public static final int one=0x7f080018;
+        public static final int frg1_btn=0x7f080009;
+        public static final int frg2_txt=0x7f08000a;
+        public static final int one=0x7f080019;
         public static final int sendContactBtn=0x7f080006;
         public static final int sendContactTxt=0x7f080005;
-        public static final int tableRow1=0x7f080013;
-        public static final int tableRow6=0x7f080015;
-        public static final int textView1=0x7f08000a;
-        public static final int textView2=0x7f08000b;
-        public static final int textView3=0x7f080014;
-        public static final int textView4=0x7f08000e;
-        public static final int textView5=0x7f08000c;
-        public static final int textView6=0x7f080016;
-        public static final int textView7=0x7f080017;
-        public static final int three=0x7f08001a;
-        public static final int two=0x7f080019;
+        public static final int tableRow1=0x7f080014;
+        public static final int tableRow6=0x7f080016;
+        public static final int textView1=0x7f08000b;
+        public static final int textView2=0x7f08000c;
+        public static final int textView3=0x7f080015;
+        public static final int textView4=0x7f08000f;
+        public static final int textView5=0x7f08000d;
+        public static final int textView6=0x7f080017;
+        public static final int textView7=0x7f080018;
+        public static final int three=0x7f08001b;
+        public static final int two=0x7f08001a;
         public static final int txt1=0x7f080004;
     }
     public static final class layout {
@@ -62,10 +63,13 @@ public final class R {
         public static final int activity_main=0x7f030003;
         public static final int activity_open=0x7f030004;
         public static final int activity_send_msg=0x7f030005;
-        public static final int contact_pick_item=0x7f030006;
-        public static final int fragement1=0x7f030007;
-        public static final int fragement2=0x7f030008;
-        public static final int layout=0x7f030009;
+        public static final int activity_tab_bar=0x7f030006;
+        public static final int contact_pick_item=0x7f030007;
+        public static final int fragement1=0x7f030008;
+        public static final int fragement2=0x7f030009;
+        public static final int fragement_a=0x7f03000a;
+        public static final int fragement_b=0x7f03000b;
+        public static final int layout=0x7f03000c;
     }
     public static final class menu {
         public static final int common=0x7f070000;
@@ -75,6 +79,7 @@ public final class R {
         public static final int main=0x7f070004;
         public static final int open=0x7f070005;
         public static final int send_msg=0x7f070006;
+        public static final int tab_bar=0x7f070007;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -87,6 +92,7 @@ public final class R {
         public static final int title_activity_open=0x7f050003;
         public static final int title_activity_send_msg=0x7f050006;
         public static final int title_activity_service=0x7f050008;
+        public static final int title_activity_tab_bar=0x7f05000a;
     }
     public static final class style {
         /** 

@@ -45,5 +45,9 @@ public class MainActivity extends Activity {
 	public void openServiceHandler(View view){
 		startActivity(new Intent(this,CommonServiceActivity.class));
 	}
+	
+	public void openTabHandler(View view){
+		startActivity(new Intent(this,TabBarActivity.class));
+	}
 
 }

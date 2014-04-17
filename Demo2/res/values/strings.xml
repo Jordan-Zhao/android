@@ -11,5 +11,6 @@
     <string name="title_activity_contact_pick">ContactPickActivity</string>
     <string name="title_activity_service">ServiceActivity</string>
     <string name="title_activity_common_service">CommonServiceActivity</string>
+    <string name="title_activity_tab_bar">TabBarActivity</string>
 
 </resources>

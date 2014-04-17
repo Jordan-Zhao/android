@@ -60,29 +60,34 @@
             android:name="com.zjd.demo2.service.CommonServiceActivity"
             android:label="@string/title_activity_common_service" >
         </activity>
-        
-        <service 
-            android:name="com.zjd.demo2.service.CommonService">
+
+        <service android:name="com.zjd.demo2.service.CommonService" >
             <intent-filter>
-                <action android:name="com.zjd.demo2.service.CommonService"></action>
+                <action android:name="com.zjd.demo2.service.CommonService" >
+                </action>
             </intent-filter>
         </service>
-        <service 
-            android:name="com.zjd.demo2.service.MusicService">
+        <service android:name="com.zjd.demo2.service.MusicService" >
             <intent-filter>
-                <action android:name="com.zjd.demo2.service.MusicService"></action>
+                <action android:name="com.zjd.demo2.service.MusicService" >
+                </action>
             </intent-filter>
         </service>
-        <service 
-            android:name="com.zjd.demo2.service.CounterService">
+        <service android:name="com.zjd.demo2.service.CounterService" >
             <intent-filter>
-                <action android:name="com.zjd.demo2.service.CounterService"></action>
+                <action android:name="com.zjd.demo2.service.CounterService" >
+                </action>
             </intent-filter>
         </service>
+
+        <activity
+            android:name="com.zjd.demo2.TabBarActivity"
+            android:label="@string/title_activity_tab_bar" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    
+
     <!-- SD卡读权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
