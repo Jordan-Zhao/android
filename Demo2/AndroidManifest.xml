@@ -84,6 +84,14 @@
             android:name="com.zjd.demo2.TabBarActivity"
             android:label="@string/title_activity_tab_bar" >
         </activity>
+        <activity
+            android:name="com.zjd.demo2.MenuBarActivity"
+            android:label="@string/title_activity_menu_bar" >
+        </activity>
+        <activity
+            android:name="com.zjd.demo2.HuadongActivity"
+            android:label="@string/title_activity_huadong" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />

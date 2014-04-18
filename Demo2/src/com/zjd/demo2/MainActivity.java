@@ -49,5 +49,13 @@ public class MainActivity extends Activity {
 	public void openTabHandler(View view){
 		startActivity(new Intent(this,TabBarActivity.class));
 	}
-
+	
+	public void openMenuListHandler(View view){
+		startActivity(new Intent(this,MenuBarActivity.class));
+	}
+	
+	public void openHuadongHandler(View view){
+		startActivity(new Intent(this,HuadongActivity.class));
+	}
+	
 }
