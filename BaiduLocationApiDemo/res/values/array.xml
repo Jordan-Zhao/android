@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_title">
+        <item>基础定位功能</item>
+        <item>反地理编码功能</item>
+        <item>地理围栏功能</item>
+        <item>其他</item>
+        <item>常见问题说明</item>
+    </string-array>
+    
+    <string-array name="second_title">
+        <item>定位模式、定位频率</item>
+        <item>定位结果是否转换成地址、地址格式</item>
+        <item>高精度地理围栏、低功耗地理围栏</item>
+        <item>坐标格式、方向信息、运营商信息等</item>
+        <item>错误码含义，问题反馈渠道</item>
+    </string-array>
+</resources>

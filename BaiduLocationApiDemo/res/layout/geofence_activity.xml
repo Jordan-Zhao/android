@@ -1,0 +1,265 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="vertical"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/geofence_title"
+            android:textSize="@dimen/main_title_size" />
+
+        <TextView
+            android:id="@+id/hight_accuracy_geofence"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_title"
+            android:text="@string/high_accuracy_geofence"
+            android:textSize="@dimen/second_title_size" />
+
+        <TextView
+            android:id="@+id/high_accuracy_geofence_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hight_accuracy_geofence"
+            android:text="@string/high_accuracy_geofence_desc" />
+
+        <RadioGroup
+            android:id="@+id/is_need_geofence_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/high_accuracy_geofence_desc"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/hight_accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high_accuracy_geofence" />
+
+            <!-- 用户输入项目 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_coord_longtitude" />
+
+                    <EditText
+                        android:id="@+id/hight_longtitude"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" 
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_coord_latitude" />
+
+                    <EditText
+                        android:id="@+id/hight_latitude"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" 
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_cood_type" />
+
+                    <EditText
+                        android:id="@+id/hight_coord_type"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" 
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_radius" />
+
+                    <EditText
+                        android:id="@+id/hight_radius"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_battery_geofence"
+                android:textSize="@dimen/desc_title_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_battery_geofence_desc"
+                android:textSize="@dimen/desc_title_size" />
+
+            <RadioButton
+                android:id="@+id/saving_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_battery_geofence" />
+
+            <!-- 用户输入项目 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_fence_name" />
+
+                    <EditText
+                        android:id="@+id/saving_fence_name"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_coord_longtitude" />
+
+                    <EditText
+                        android:id="@+id/saving_longtitude"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" 
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_coord_latitude" />
+
+                    <EditText
+                        android:id="@+id/saving_latitude"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" 
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_cood_type" />
+
+                    <EditText
+                        android:id="@+id/saving_coord_type"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_radius" />
+
+                    <EditText
+                        android:id="@+id/saving_radius"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" 
+                        android:inputType="numberSigned"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_battery_effective_time" />
+
+                    <EditText
+                        android:id="@+id/saving_effective_time"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content" 
+                        android:layout_marginBottom="48dip"
+                        android:inputType="numberSigned"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/test_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/setting_ok" />
+    </RelativeLayout>
+
+</ScrollView>

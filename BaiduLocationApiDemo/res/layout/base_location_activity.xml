@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+      	android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/base_loction_title"
+            android:textSize="@dimen/main_title_size" />
+
+        <TextView
+            android:id="@+id/location_mode_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_title"
+            android:text="@string/location_accuracy_mode" />
+
+        <RadioGroup
+            android:id="@+id/location_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_mode_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/location_mode_height_accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hight_accuracy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/hight_accuracy_desc"
+                android:textSize="@dimen/desc_title_size" />
+
+            <RadioButton
+                android:id="@+id/location_mode_saving_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saving_battery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/saving_battery_desc"
+                android:textSize="@dimen/desc_title_size" />
+
+            <RadioButton
+                android:id="@+id/location_mode_device_sensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_sensor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/device_sensor_desc"
+                android:textSize="@dimen/desc_title_size" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/location_frequency_mode_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_mode"
+            android:text="@string/location_frequency_mode" />
+
+        <RadioGroup
+            android:id="@+id/location_frequency_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_frequency_mode_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/continuous_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continuous_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continuous_location_desc"
+                android:textSize="@dimen/desc_title_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location_scan_span" />
+
+                <EditText
+                    android:id="@+id/scan_span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/scan_span_desc"
+                    android:inputType="numberSigned"
+                    android:textSize="@dimen/desc_title_size" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/single_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_location_desc"
+                android:textSize="@dimen/desc_title_size" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/test_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/setting_ok" />
+    </RelativeLayout>
+
+</ScrollView>

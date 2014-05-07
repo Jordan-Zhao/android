@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BaiduLocationApiDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	
+	<string name="main_title">百度定位SDK产品Demo</string>
+	<string name="base_loction_title">基础定位功能</string>
+	<string name="geocode_title">反地理编码功能</string>
+	<string name="geofence_title">地理围栏功能</string>
+	<string name="other_title">其他</string>
+	<string name="qa_title">常见问题</string>
+	
+	<string name="test_demo">测试demo</string>
+	<string name="end_test_demo">结束测试</string>
+	<string name="setting_ok">设置完毕</string>
+	
+	<!-- main title -->
+	<string name="function_list">功能列表</string>
+	
+	<!-- base location title -->
+	<string name="location_accuracy_mode">定位精度模式</string>
+	<string name="hight_accuracy">高精度定位模式</string>
+	<string name="saving_battery">低功耗定位模式</string>
+	<string name="device_sensor">仅用设备定位模式</string>
+	<string name="hight_accuracy_desc">高精度定位模式下，会同时使用GPS、Wifi和基站定位，返回的是当前条件下精度最好的定位结果</string>
+	<string name="saving_battery_desc">低功耗定位模式下，仅使用网络定位即Wifi和基站定位，返回的是当前条件下精度最好的网络定位结果</string>
+	<string name="device_sensor_desc">仅用设备定位模式下，只使用用户的GPS进行定位。这个模式下，由于GPS芯片锁定需要时间，首次定位速度会需要一定的时间</string>
+	<string name="scan_span_desc">输入间隔时间，单位ms</string>
+	
+	
+	<string name="location_frequency_mode">定位频率模式</string>
+	<string name="continuous_location">连续定位</string>
+	<string name="single_location">单次定位</string>
+	<string name="continuous_location_desc">连续定位模式指的是通过设定定位间隔时间，每隔一段时间自动定位一次</string>
+	<string name="single_location_desc">单次定位指的是每次定位都需要主动发起定位请求，每发起一次定位请求，定位一次</string>
+	<string name="location_scan_span">定位时间间隔</string>
+	
+	<!-- geocode title -->
+	<string name="is_need_geocode">是否需要反地理编码</string>
+	<string name="use_geocode">不使用反地理编码</string>
+	<string name="no_use_geocode">使用反地理编码</string>
+	<string name="is_need_geocode_desc">反地理编码功能指的是把用户得到的经纬度坐标转换成地址信息的功能</string>
+	<string name="use_geocode_desc">此状态下，定位后只得到一个经纬度信息</string>
+	<string name="no_use_geocode_desc">些状态下，定位后得到经纬度信息和反地理编码信息</string>
+	
+	<!-- geofence title -->
+	<string name="high_accuracy_geofence">高精度地理围栏</string>
+	<string name="save_battery_geofence">低功耗地理围栏</string>
+	<string name="high_accuracy_geofence_desc">高精度地理围栏模式下，用户需要设置地理围栏需要的中心点，半径，定位间隔时间等参数，此模式下较为耗电</string>
+	<string name="save_battery_geofence_desc">低功耗地理围栏模式下，用户需要设置地理围栏需要的中心点，半径范围（此模式支持小【500m以内】、中【500-5km】、大【5km-15km】三种范围），此模式十分省电</string>
+	
+	<string name="high_accuracy_coord_longtitude">围栏中心点坐标经度：</string>
+	<string name="high_accuracy_coord_latitude">围栏中心点坐标经度：</string>
+	<string name="high_accuracy_cood_type">中心点坐标格式：</string>
+	<string name="high_accuracy_radius">围栏中心半径：</string>
+	<string name="high_accuracy_scan_span">定位间隔：</string>
+	<string name="high_accuracy_effective_time">围栏生效时间：</string>
+	
+	<string name="save_battery_fence_name">围栏名称：</string>
+	<string name="save_battery_coord_longtitude">围栏中心点经度：</string>
+	<string name="save_battery_coord_latitude">围栏中心点纬度：</string>
+	<string name="save_battery_cood_type">中心点坐标格式：</string>
+	<string name="save_battery_radius">围栏提醒半径：</string>
+	<string name="save_battery_effective_time">围栏生效时间：</string>
+	
+	<!-- other title -->
+	<string name="location_coord_type">设定定位结果的坐标格式</string>
+	<string name="location_coord_type_desc">百度定位SDK支持三种定位坐标格式，分虽是 bd09ll、bd09和gcj02。建议使用百度产品的选择使用bd09ll格式坐标。</string>
+	<string name="location_coord_type_gcj">gcj02(国测局加密经纬度坐标)</string>
+	<string name="location_coord_type_bd09ll">bd09ll(百度加密经纬度坐标)</string>
+	<string name="location_coord_type_bd09">bd09(百度加密墨卡托坐标)</string>
+	<string name="is_need_direction">设置是否需要方向信息</string>
+	<string name="is_need_direction_desc">百度定位SDK支持从设备传感器中获取方向，获取的方向为手机头部所对应的方向信息。</string>
+	<string name="is_need_direction_yes">需要方向</string>
+	<string name="is_need_direction_no">不需要方向</string>
+	<string name="is_need_operation">设置是否需要运营商信息</string>
+	<string name="is_need_operation_desc">使用百度定位SDK进行基站定位时，可以对定位用户所属运营商信息进行区分</string>
+	<string name="is_need_operation_yes">需要运营商信息</string>
+	<string name="is_need_operation_no">不需要运营商信息</string>
+	
+	<!-- qa title -->
+	<string name="error_code_desc">错误码说明</string>
+	<string name="error_code_detail"> 61 ： GPS定位结果\n
+		62 ： 扫描整合定位依据失败。此时定位结果无效。\n
+		63 ： 网络异常，没有成功向服务器发起请求。此时定位结果无效。\n
+		65 ： 定位缓存的结果。\n
+		66 ： 离线定位结果。通过requestOfflineLocaiton调用时对应的返回结果\n
+		67 ： 离线定位失败。通过requestOfflineLocaiton调用时对应的返回结果\n
+		68 ： 网络连接失败时，查找本地离线定位时对应的返回结果\n
+		161： 表示网络定位结果\n
+		162~167： 服务端定位失败\n
+		502：key参数错误\n
+		505：key不存在或者非法\n
+		601：key服务被开发者自己禁用\n
+		602：key mcode不匹配\n
+		501～700：key验证失败\n
+	</string>
+	<string name="qa_callback">问题反馈方法</string>
+	<string name="qa_callback_mail">mapapi@baidu.com</string>
+</resources>
