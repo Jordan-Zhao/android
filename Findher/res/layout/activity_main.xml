@@ -4,11 +4,27 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 	
-    <Button 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="联系人"
-        android:onClick="selectContactHandler"/>
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="选择联系人"
+	        android:onClick="selectContactHandler"/>
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="测试网络"
+	        android:onClick="testWebHandler"/>
+	    <TextView 
+	        android:id="@+id/testWebTxt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="选择联系人"/>
+    </LinearLayout>
+    
     <com.baidu.mapapi.map.MapView
         android:id="@+id/baseMapView"
         android:layout_width="fill_parent"

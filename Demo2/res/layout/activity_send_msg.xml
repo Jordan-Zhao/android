@@ -24,5 +24,14 @@
         android:layout_height="wrap_content"
         android:text="联系人"
         android:onClick="selecteContactHandler"/>
-
+    
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本机号码：" />
+    <EditText 
+        android:id="@+id/myNumberTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
 </LinearLayout>
